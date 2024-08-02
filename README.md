@@ -71,6 +71,10 @@ Here are some screenshots showcasing the functionality of the Algorithm Visualiz
    - **Space Complexity:**
      - O(1)
 
+## Live Demo
+
+You can visit the live version of the Algorithm Visualizer at: [Algorithm Visualizer](https://mrpeace-algovisualiser.netlify.app/)
+
 ## Setup
 
 To run the Algorithm Visualizer locally, follow these steps:
@@ -103,6 +107,3 @@ To run the Algorithm Visualizer locally, follow these steps:
 
 Contributions are welcome! Please open an issue or submit a pull request with your suggestions or improvements.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
