@@ -62,13 +62,7 @@ Here are some screenshots showcasing the functionality of the Algorithm Visualiz
    - **Space Complexity:**
      - O(log n) (in-place version)
 
-6. **Heap Sort**
-   - **Time Complexity:**
-     - Best: O(n log n)
-     - Average: O(n log n)
-     - Worst: O(n log n)
-   - **Space Complexity:**
-     - O(1)
+
 
 ## Live Demo
 
