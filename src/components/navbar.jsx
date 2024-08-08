@@ -10,7 +10,7 @@ const Navbar = ({ onChange, newList, start, response }) => {
     { value: 3, type: 'Insertion Sort' },
     { value: 4, type: 'Merge Sort' },
     { value: 5, type: 'Quick Sort' },
-    { value: 6, type: 'Heap Sort' },
+    
   ];
 
   const lengths = [5, 10, 15, 20];
