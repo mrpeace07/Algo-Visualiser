@@ -12,8 +12,7 @@ Here are some screenshots showcasing the functionality of the Algorithm Visualiz
 - **Demo 2:**
   ![Demo 2](demo/d2.png)
 
-- **Demo 3:**
-  ![Demo 3](demo/d3.png)
+
 
 ## Features
 
