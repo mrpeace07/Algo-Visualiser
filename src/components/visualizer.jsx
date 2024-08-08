@@ -12,7 +12,6 @@ import {
   selectionSort,
   mergeSort,
   quickSort,
-  heapSort,
 } from './algorithms';
 
 class Visualizer extends React.Component {
@@ -28,9 +27,10 @@ class Visualizer extends React.Component {
     this.generateList();
   }
 
-  componentDidUpdate() {
-    this.onChange();
-    this.generateList();
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.size !== this.state.size) {
+      this.generateList();
+    }
   }
 
   render() {
@@ -75,7 +75,7 @@ class Visualizer extends React.Component {
 
   getMoves = async (algorithm) => {
     const array = await getKeysCopy(this.state.list, this.state.size);
-    const algorithms = [bubbleSort, selectionSort, insertionSort, mergeSort, quickSort, heapSort];
+    const algorithms = [bubbleSort, selectionSort, insertionSort, mergeSort, quickSort];
     return algorithms[algorithm - 1](array, array.length);
   };
 
@@ -127,7 +127,11 @@ class Visualizer extends React.Component {
 
   updateElementClass = async (indexes, classType) => {
     const list = [...this.state.list];
-    indexes.forEach((index) => (list[index].classType = classType));
+    indexes.forEach((index) => {
+      if (list[index]) { // Ensure the index exists
+        list[index].classType = classType;
+      }
+    });
     await this.updateState(list);
   };
 
